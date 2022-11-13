@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      
+      /* I. Selectors */
+     
+      /* Put styles for sections 1.1 here*/
+      div{
+        margin: 20px 0;
+      padding: 20px;
+      border: 1px solid black;
+      }
+
+      /* Put styles for sections 1.2 here */
+      .style-me1{
+        color: red;
+      }
+
+      /* Put styles for sections 1.3 here */
+      #style-me2{
+        color: blue;
+      }
+      /* Put styles for sections 1.4 here */
+      #style-me2.style-me1 
+      { color: purple; }
+      
+      /* II. Box model and common properties */
+      div>p {
+        background-color: rgb(232, 173, 173);
+      }
+      
+     
+      .box {
+      width: 350px;
+      height: 150px;
+      margin: 20px;
+      padding: 20px;
+      border: 10px solid blue;
+      border-style: dashed;
+      box-sizing: border-box;
+      overflow: visible;
+      outline: 10px;
+      border-radius: 20px;
+      background-image: url("ewee.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      }
+      
+      /*the vw and vh size is much more large than px units*/
+
+      
+      /* IV. Styling text */
+      .text-style{
+        color: brown;
+        font-size: small;
+        line-height: normal;
+        font-weight: bold;
+        text-align: right;
+        letter-spacing: normal;
+        word-spacing: 2px;
+        text-transform: uppercase;
+        text-decoration: double;
+      }
+      
+      /*V Styleing Links*/
+      a:link{
+        color: red;
+      }
+
+      a:visited{
+        color: green;
+      }
+
+      a:hover{
+        color: hotpink;
+      }
+
+      a:active{
+        color:blue;
+      }
+
+      a:focus{
+        color: purple;
+      }
+      /* VI. calc() */
+      .calc.style{
+        width: calc(100vw-100px);
+      }
+
+    /*Split the screen into two parts */
+     .split{
+        height: 100%;
+        width:25%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        overflow-x: hidden;
+        padding-top: 20px;
+     }
+
+    /*control the left panel*/
+    .left{
+        left: 0;
+        background-color: blanchedalmond;
+    }
+    /*control the right panel*/
+    .right{
+        right: 0;
+        background-color: rgb(180, 247, 216);
+    }
+
+    /*if you want the content centered horizontally and vertically*/
+    .centered{
+        position: absolute;
+        top: 50%;
+        left: 27%;
+        transform: translate(-0%,-50%);
+        text-align: center;
+    }
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="Split right centered">
+    <h1>Zhenni Chao - Resume</h1>
+
+    <article>
+      <h2>Exerprience </h2>
+      <h3>Data Scientist</h3>
+      <section>
+        <p class="style-me1">
+          
+        </p>
+      </section>
+
+      
+      <section class="My-experience">
+        <div >
+            <p>The Knowledge Warehouse LTD- 2019- 2022</p>
+            <ul>
+             <li>Creating Beautiful website with use of HTML and CSS </li>
+             <li>Following best accessibility principles</li>
+             <li>Solving problems and proposing smooth,working solutions</li>
+            </ul>
+        </div>
+       </section>
+
+      <section class="My-experience-second">
+        <h3>Data Analyst</h3>
+        <div >
+          <p>The Bluelab Ltd</p>
+          <ul>
+            <li>Data warehousing</li>
+            <li>General Data request and SQL process</li>
+            <li>R and Python report or data visulazation for stakeholders</li>
+          </ul>
+        </div>
+      </section>
+    
+
+    <section class="My-Edu">
+        <h3>Institude of Data Web Development Course</h3>
+        <div >
+          <p>Insitute of Data, October 2022- Arpil 2023</p>
+          <ul>
+            <li>Web Development</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>React</li>
+            <li>node.js</li>
+            <li>express servers</li>
+          </ul>
+        </div>
+      </section>
+    
+
+
+    <section class="My-edu-two">
+        <h3>University of Auckland, Mar 2015- Dec 2018</h3>
+        <div >
+          <p> Statistics & Mathmetic & Data Science</p>
+          <ul>
+            <li>Statistical Analysis Tool: R, Python, SAS </li>
+            <li>SQL, Tableau</li>
+            <li>Matlab math modeling skills</li>
+          </ul>
+        </div>
+      </section>
+    </article>
+    </div>
+       
+
+     <div class="split left">
+      <h2>Zhenni CHAO</h2>
+      <div class="box">I'm the first box.</div>
+
+      <h2>V. Styling links</h2>
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links"
+        alt="Styling links with Mozilla"
+        >Styling links (Mozilla)</a>
+    <div style="height: 10px; background: #AA99CC">
+       Created by Zhenni Chao, 2022
+    </div>
+  </body>
+    </div>
